@@ -1,0 +1,25 @@
+### 获取项目列表
+GET http://localhost:3000/api/project HTTP/1.1
+
+
+### 添加项目
+POST http://localhost:3000/api/project HTTP/1.1
+content-type: application/json
+
+{
+  "projectName": "test1",
+  "description": "description",
+  "prefix": "/mock-api"
+}
+
+### 修改项目
+PATCH http://localhost:3000/api/project/2 HTTP/1.1
+content-type: application/json
+
+{
+  "projectName": "test2"
+}
+
+### 删除项目
+DELETE http://localhost:3000/api/project/1 HTTP/1.1
+content-type: application/json

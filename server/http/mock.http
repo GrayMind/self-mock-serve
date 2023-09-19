@@ -1,0 +1,35 @@
+### 获取项目下接口列表
+GET http://localhost:3000/api/mock/project/2/list HTTP/1.1
+
+### 获取接口详情
+GET http://localhost:3000/api/mock/1 HTTP/1.1
+
+### 添加接口
+POST http://localhost:3000/api/mock HTTP/1.1
+content-type: application/json
+
+{
+  "projectId": 2,
+  "description": "description",
+  "url": "url",
+  "method": "GET",
+  "parameters": "",
+  "responseModel": ""
+}
+
+
+### 修改接口
+PATCH http://localhost:3000/api/mock/1 HTTP/1.1
+content-type: application/json
+
+{
+  "description": "description1",
+  "url": "url1",
+  "method": "GET",
+  "parameters": "1",
+  "responseModel": "1"
+}
+
+### 删除接口
+DELETE http://localhost:3000/api/mock/1 HTTP/1.1
+content-type: application/json
